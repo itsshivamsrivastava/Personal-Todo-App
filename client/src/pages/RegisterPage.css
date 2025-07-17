@@ -1,0 +1,103 @@
+/* Gradient background */
+.register-bg {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.register-container {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    padding: 30px 30px 17px 30px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.register-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+    margin-top: -0.5rem;
+    color: #222;
+    text-align: center;
+}
+
+.register-error {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.register-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-sizing: border-box;
+}
+
+.register-or {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.95rem;
+    margin: 10px 0 8px 0;
+}
+
+.register-login {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 2px;
+    transition: color 0.2s;
+}
+
+@media (max-width: 700px) {
+    .register-container {
+        padding: 24px 8px 16px 8px;
+        max-width: 98vw;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .register-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-bg {
+        align-items: flex-start;
+        padding-top: 16px;
+    }
+    .register-container {
+        padding: 14px 2vw 10px 2vw;
+        max-width: 99vw;
+        min-width: 0;
+        border-radius: 12px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .register-title {
+        font-size: 1.1rem;
+        margin-bottom: 18px;
+    }
+    .register-form {
+        gap: 12px;
+    }
+    .register-or, .register-login {
+        font-size: 0.92rem;
+    }
+} 

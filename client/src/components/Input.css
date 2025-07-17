@@ -1,0 +1,39 @@
+/* Input group with icon */
+.custom-input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.custom-input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: none;
+    border-bottom: 2px solid #eee;
+    background: transparent;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    border-radius: 0;
+    transition: border-color 0.2s;
+}
+
+.custom-input:focus {
+    border-bottom: 2px solid #6a82fb;
+}
+
+@media (max-width: 480px) {
+    .custom-input {
+        font-size: 0.95rem;
+    }
+} 
